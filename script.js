@@ -15,19 +15,14 @@ $(document).ready(function () {
     console.log("running");
     $(".facts").click(function () {
         console.log("clicked");
-        $(this).animate({
-            backgroundColor: jQuery.Color("white")
-        }, "slow");
+        $(this).css("background-color", "white");
     });
     $("#revealall").click(function () {
         $(".facts").each(function () {
-            $(this).animate({
-                backgroundColor: jQuery.Color("white")
-            }, "slow");
+            $(this).css("background-color", "white");
         });
     });
     $(".maintext").each(function () {
-        gg
         var dashes = "";
         for (i = 0; i <= $(this).text().length; i++) {
             dashes = dashes + "-";
